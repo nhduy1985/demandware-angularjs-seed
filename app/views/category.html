@@ -1,0 +1,27 @@
+<!-- Page Title -->
+		<div class="section section-white">
+	    	<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h3>Category: <span ng-show="isSubCategory(category)"><a href="#/categories/{{category.parent_category_id}}">{{category.parent_category_id}}</a> > </span>{{category.name}}</h3>
+						<p>
+							{{category.description}}
+						</p>
+						<p>
+							{{category.page_description}}
+						</p>
+					</div>
+					<div class="col-md-6">
+						<p ng-bind-html="category.c_headerMenuBanner"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="section">
+	    	<div class="container">
+	    		<h2>Products</h2>
+	    		<div class="row" ng-include="'views/products/grid.html'"></div>
+				<div class="pagination-wrapper " ng-include="'views/products/pagination.html'"></div>
+			</div>
+		</div>
+        

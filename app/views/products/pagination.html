@@ -1,0 +1,5 @@
+<ul class="pagination pagination-lg">
+	<li class="disabled"><a href="#">Previous</a></li>
+	<li ng-repeat="n in getPagingTotal()" ng-class="{'active': $index==pageCurrent}"><a ng-click="onPage($index)">{{n}}</a></li>						
+	<li class="disabled"><a href="#">Next</a></li>
+</ul>

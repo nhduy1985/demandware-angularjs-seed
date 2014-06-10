@@ -1,0 +1,22 @@
+<div class="col-md-3 col-sm-6" ng-repeat="product in products">
+	<!-- Product -->
+	<div class="shop-item">
+		<!-- Product Image -->
+		<div class="shop-item-image">
+			<a href="#/products/{{product.product_id}}"><img src="{{product.image.link}}" alt="{{product.image.alt}}"></a>
+		</div>
+		<!-- Product Title -->
+		<div class="title">
+			<h3><a href="#/products/{{product.product_id}}">{{product.product_name}}</a></h3>
+		</div>
+		<!-- Product Price-->
+		<div class="price hide">
+			Click to see more
+		</div>
+		<!-- Add to Cart Button -->
+		<div class="actions">
+			<a href="#/products/{{product.product_id}}" class="btn btn-small"><i class="icon-shopping-cart icon-white"></i> Add to Cart</a>
+		</div>
+	</div>
+	<!-- End Product -->
+</div>

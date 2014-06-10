@@ -1,0 +1,15 @@
+'use strict';
+
+angular
+.module('demandwareAngularSeedApp')
+.constant('CONFIG', {
+	'app': {
+		'title': 'Demo Shop'
+	},
+	'demandware': {
+		'baseUrl': 'base-url',
+		'apiVersion': 'api-version',
+		'clientId': 'client-id',
+		'publicSiteUrl': 'public-site-url'
+	}
+});

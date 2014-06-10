@@ -1,0 +1,84 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="demandwareAngularSeedApp"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" ng-app="demandwareAngularSeedApp"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" ng-app="demandwareAngularSeedApp"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="demandwareAngularSeedApp"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title ng-bind-template="{{pageTitle}} - Demanware Angular Store">Demanware Angular Store</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,app}) styles/theme.css -->    
+    <link rel="stylesheet" href="styles/theme/leaflet.css" />
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="styles/theme/leaflet.ie.css" />
+    <![endif]-->
+    <link rel="stylesheet" href="styles/theme/main.css">
+    <!-- endbuild -->
+    <!-- build:css({.tmp,app}) styles/main.css -->    
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header class="header" ng-include="'views/header.html'"></header>
+    <!-- Add your site or application content here -->
+    <section class="wrapper" ng-view=""></section>
+    <footer class="footer" ng-include="'views/footer.html'"></footer>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/theme.js -->
+        <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+        <script src="js/jquery.fitvids.js"></script>
+        <script src="js/jquery.sequence-min.js"></script>
+        <script src="js/jquery.bxslider.js"></script>
+        <script src="js/template.js"></script>
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->        
+        <script src="scripts/app.js"></script>
+        <script src="scripts/config.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/menu.js"></script>
+        <script src="scripts/services/category.js"></script>
+        <script src="scripts/controllers/categories.js"></script>
+        <script src="scripts/services/demandware.js"></script>        
+        <script src="scripts/controllers/products.js"></script>
+        <script src="scripts/services/product.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
