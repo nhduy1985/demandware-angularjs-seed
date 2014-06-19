@@ -30,11 +30,15 @@ Installation
 ============
 
 1. Download the repo
+
 2. Install ``grunt``
+
  ```
  npm -g grunt-cli
  ```
+ 
 3. Install packages
+
  ```
  npm install
  bower install
