@@ -21,8 +21,10 @@ Features:
 
 Screenshots:
 
+Category page screenshot:
 ![alt text](https://raw.githubusercontent.com/nhduy1985/demandware-angularjs-seed/develop/screenshots/ss_category_1.png "Category Page")
 
+Product page screenshot:
 ![alt text](https://raw.githubusercontent.com/nhduy1985/demandware-angularjs-seed/develop/screenshots/ss_product_1.png "Product Page")
 
 Requirements
