@@ -1,3 +1,7 @@
 .pagination > li {
 	cursor: pointer;
 }
+
+.logo-wrapper img {
+	height: 50px;
+}
