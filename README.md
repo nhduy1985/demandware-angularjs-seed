@@ -9,6 +9,8 @@ An AngularJS mini-site for show up data from Demandware
 
 Features:
 
+- [x] Twitter Bootstrap 3.x
+- [x] Responsive
 - [x] Navigation menu
 - [x] Show root categories 
 - [x] Show category products
@@ -16,6 +18,12 @@ Features:
 - [ ] Show product page with complex data (variation, set, bundle)
 - [ ] Shopping cart
 - [ ] Checkout
+
+Screenshots:
+
+![alt text](https://raw.githubusercontent.com/nhduy1985/demandware-angularjs-seed/develop/screenshots/ss_category_1.png "Category Page")
+
+![alt text](https://raw.githubusercontent.com/nhduy1985/demandware-angularjs-seed/develop/screenshots/ss_product_1.png "Product Page")
 
 Requirements
 ============
