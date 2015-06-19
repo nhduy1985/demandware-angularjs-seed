@@ -5,3 +5,16 @@
 .logo-wrapper img {
 	height: 50px;
 }
+
+.product .price {
+	font-size: 1em;
+}
+
+.product .price .org-price {
+	color: #A5A5A5;
+    text-decoration: line-through;
+}
+
+.product .price .discount-price {
+	color: #FF0000;   
+}

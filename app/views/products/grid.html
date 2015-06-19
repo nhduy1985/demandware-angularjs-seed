@@ -1,18 +1,22 @@
 <div class="col-md-3 col-sm-6" ng-repeat="product in products">
 	<!-- Product -->
-	<div class="shop-item">
+	<div class="shop-item product">
 		<!-- Product Image -->
 		<div class="shop-item-image">
-			<a href="#/products/{{product.product_id}}"><img src="{{product.image.link}}" alt="{{product.image.alt}}"></a>
+			<a href="#/products/{{product.product_id}}"><img src="{{product.image.link}}" alt="{{product.image.alt}}" width="247" height="247"></a>
 		</div>
 		<!-- Product Title -->
 		<div class="title">
 			<h3><a href="#/products/{{product.product_id}}">{{product.product_name}}</a></h3>
 		</div>
 		<!-- Product Price-->
-		<div class="price">
-			<span>{{product.price}} {{product.currency}}</span>
+		<div ng-if="!product.price_max" class="price">
+		    <span>{{product.price|currency:"$"}}</span>
 		</div>
+		<div ng-if="product.price_max > 0" class="price">
+		    <span class="org-price">{{product.price_max|currency:"$"}}</span>
+		    <span class="discount-price">{{product.price|currency:"$"}}</span>
+		</div>	
 		<!-- Add to Cart Button -->
 		<div class="actions">
 			<a href="#/products/{{product.product_id}}" class="btn btn-small"><i class="icon-shopping-cart icon-white"></i> Add to Cart</a>

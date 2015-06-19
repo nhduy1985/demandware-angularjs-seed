@@ -25,7 +25,7 @@ angular.module('demandwareAngularSeedApp')
         });
       },
       getAddCartLink: function(productId) {
-        return CONFIG.demandware.publicSiteUrl + productId + '.html';
+        return CONFIG.demandware.publicSiteUrl + "default/Product-Show?pid=" + productId;
       }
     };
   });
