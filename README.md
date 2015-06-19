@@ -3,12 +3,14 @@ demandware-angularjs-seed
 
 An AngularJS mini-site for show up data from Demandware
 
-- A Demandware mini-site with AngularJS
+- A Demandware mini-site with AngularJS (Inspired by http://yeoman.io)
 - A showcase ecommerce site with frontend requirement
 - No need server side scripting (NodeJS or Grunt only for deploy)
 
 Features:
 
+- [x] Twitter Bootstrap 3.x (Inspired by http://www.bootstrapzero.com/bootstrap-template/mpurpose)
+- [x] Responsive
 - [x] Navigation menu
 - [x] Show root categories 
 - [x] Show category products
@@ -16,6 +18,14 @@ Features:
 - [ ] Show product page with complex data (variation, set, bundle)
 - [ ] Shopping cart
 - [ ] Checkout
+
+Screenshots:
+
+Category page screenshot:
+![alt text](https://raw.githubusercontent.com/nhduy1985/demandware-angularjs-seed/develop/screenshots/ss_category_1.png "Category Page")
+
+Product page screenshot:
+![alt text](https://raw.githubusercontent.com/nhduy1985/demandware-angularjs-seed/develop/screenshots/ss_product_1.png "Product Page")
 
 Requirements
 ============

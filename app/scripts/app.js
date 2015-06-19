@@ -5,7 +5,8 @@ angular
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'angular-loading-bar'
 ])
 .config(function ($routeProvider) {
   $routeProvider
