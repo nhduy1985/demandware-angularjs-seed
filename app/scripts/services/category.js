@@ -17,7 +17,12 @@ angular.module('demandwareAngularSeedApp')
       getProducts: function(id,limit,start) {
         limit = limit || 8;
         start = start || 0;
-        return demandwareClient.call('GET','product_search/images',{'refine_1=cgid':id,'count':limit,'start':start});
+        return demandwareClient.call('GET','product_search',{
+          'refine_1=cgid':id,
+          'count':limit,
+          'start':start,
+          'expand': 'prices,images'
+        });
       }
     };
   }]);
