@@ -7,9 +7,14 @@ angular
 		'title': 'Demo Shop'
 	},
 	'demandware': {
+		//'baseUrl' - the OCAPI 'base url' (https://info.demandware.com/DOC3/topic/com.demandware.dochelp/OCAPI/15.2/usage/UrlSchema.htm) for calling DW APIs
+		//Ex: https://staging.sitegenesis.dw.demandware.net/s/SiteGenesis/dw/shop/
 		'baseUrl': 'base-url',
+		//'api-version' - OCAPI version which is matched with OCAPI Settings (Ex: 'v15_2')
 		'apiVersion': 'api-version',
 		'clientId': 'client-id',
+		//'publicSiteUrl' - the storefront's home URL for redirect
+		//Ex: http://staging.sitegenesis.dw.demandware.net/s/SiteGenesis/
 		'publicSiteUrl': 'public-site-url'
 	}
 });

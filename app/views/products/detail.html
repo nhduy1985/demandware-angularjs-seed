@@ -10,31 +10,35 @@
 		</div>
         
         <div class="section">
-	    	<div class="container">
+	    	<div class="container product">
 	    		<div class="row">
 	    			<!-- Product Image & Available Colors -->
 	    			<div class="col-sm-6">
 	    				<div class="product-image-large">
-	    					<img src="{{thumbnailImage.link}}" alt="Item Name">
+	    					<img src="{{thumbnailImage.link}}" alt="Item Name" width="350" height="350">
 	    				</div>
 	    			</div>
 	    			<!-- End Product Image & Available Colors -->
 	    			<!-- Product Summary & Options -->
 	    			<div class="col-sm-6 product-details">
 	    				<h4>{{product.name}}</h4>
-	    				<div class="price">
-							<span class="price-was">{{product.price | currency:"$"}}</span> {{product.price | currency:"$"}}
+	    				<div ng-if="!product.price_max" class="price">
+						    <span>{{product.price|currency:"$"}}</span>
 						</div>
+						<div ng-if="product.price_max > 0" class="price">
+						    <span class="org-price">{{product.price_max|currency:"$"}}</span>
+						    <span class="discount-price">{{product.price|currency:"$"}}</span>
+						</div>	
 						<h5>Quick Overview</h5>
 	    				<p>
-	    					{{product.page_description}}
+	    					{{product.short_description}}
 	    				</p>
 						<table class="shop-item-selections">							
 							<!-- Quantity -->
 							<tr>
 								<td><b>Quantity:</b></td>
 								<td>
-									<input type="text" class="form-control input-sm input-micro" value="1">
+									<input type="number" maximum="10" class="form-control input-sm input-micro" value="1">
 								</td>
 							</tr>
 							<!-- Add to Cart Button -->
@@ -61,7 +65,7 @@
 								<div class="tab-pane active" id="tab1">
 									<h4>Product Description</h4>
 									<p>
-										{{product.c_tabDescription}}
+										{{product.long_description}}
 									</p>									
 								</div>
 								<!-- Tab Content (Specification) -->
